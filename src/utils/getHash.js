@@ -1,9 +1,12 @@
-const getHash = () => 
-    location.hash.slice(1).toLocaleLowerCase().split('/')[1] || '/';
+// const getHash = () => 
+//     location.hash.slice(1).toLocaleLowerCase().split('/')[1] || '/';
     
-export default getHash;
+// export default getHash;
 
-Donde
+const getHash = () =>
+  location.hash.slice(1).toLocaleLowerCase().split('/')[1] || '/';
+
+export default getHash;
 
 // location.hash trae el fragmento de la url a partir de donde encuentre un #. En este caso traería #/1/
 // .slice(1) corta la url y muestra a partir del primer elemento. En este Caso el resultado es /1/
